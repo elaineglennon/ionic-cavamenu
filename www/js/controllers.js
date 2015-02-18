@@ -4,6 +4,6 @@ angular.module('cavamenu.controllers', [])
 })
 
 .controller('DishesCtrl', function($scope, $stateParams) {
-  $stateParams.dishesId = $scope.dishesId;
+  $scope.dishesId = $stateParams.dishesId;
 });
 
