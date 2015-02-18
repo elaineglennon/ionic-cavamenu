@@ -31,7 +31,7 @@ angular.module('cavamenu', ['ionic', 'cavamenu.controllers'])
   })
 
   .state('app.dishes', {
-    url: "/dishes/:DishesId",
+    url: "/dishes/:dishesId",
     views: {
       'menuContent': {
         templateUrl: "templates/dishes.html",
