@@ -1,4 +1,4 @@
-<ion-view view-title="Dishes">
+<ion-view view-title="{{ ['', 'Nibbles', 'Fish & Shellfish', 'Vegetables & Pulses', 'Meats'][dishesId]  }}">
   <ion-content>
     <ion-list ng-if="dishesId == 1">
       <ion-item>almonds</ion-item>
@@ -54,9 +54,6 @@
       <ion-item>pig cheeks, apple, sultanas, tomato sauce</ion-item>
       <ion-item>chorizo, sherry</ion-item>
       <ion-item>black pudding, chickpeas, raisins, pine nuts, parsley</ion-item>
-    </ion-list>
-    <ion-list ng-if="dishesId != 1 && dishesId != 2 && dishesId != 3 && dishesId != 4">
-      <ion-item>Please select a category from the side menu.</ion-item>
     </ion-list>
   </ion-content>
 </ion-view>
